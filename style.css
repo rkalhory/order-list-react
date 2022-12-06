@@ -1,0 +1,112 @@
+.rst__lineHalfHorizontalRight::before, .rst__lineFullVertical::after, .rst__lineHalfVerticalTop::after, .rst__lineHalfVerticalBottom::after {
+    background-color: #C1C8DD!important;
+    z-index: -1;
+    /*border-radius: 5px;*/
+}
+
+.rst__node.rst__rtl:first-child .rst__lineHalfHorizontalRight::before{
+    background-color: transparent!important;
+    height: 25px;
+    border:solid 1px #C1C8DD;
+    border-bottom: 0;
+    border-left: 0;
+    border-top-right-radius: 5px;
+}
+
+.rst__node.rst__rtl:first-child .rst__lineHalfHorizontalRight::after{
+    bottom: -23px;
+}
+
+.rst__rtl.rst__rowWrapper {
+    padding: 15px 0 5px 10px;
+}
+
+
+.rst__lineBlock.rst__lineHalfVerticalTop:before,
+.rst__node.rst__rtl:nth-last-child(1) .rst__lineHalfHorizontalRight::before{
+    background-color: transparent!important;
+    height: 25px;
+    border:solid 1px #C1C8DD;
+    border-top: 0;
+    border-left: 0;
+    border-bottom-right-radius: 5px;
+    top:calc(50% - 25px)
+}
+
+.rst__lineBlock.rst__lineHalfVerticalTop:after,
+.rst__node.rst__rtl:nth-last-child(1) .rst__lineHalfHorizontalRight::after{
+    top: -23px;
+}
+
+.rst__lineChildren::after{
+    background-color: #C1C8DD!important;
+}
+
+.rst__collapseButton, .rst__expandButton {
+    -webkit-box-shadow: 0 0 0 1px #c1c8dd!important;
+    box-shadow: 0 0 0 1px #c1c8dd!important;
+    width: 23px;
+    height: 23px;
+}
+
+.rst__collapseButton:focus, .rst__expandButton:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.rst__collapseButton:hover:not(:active), .rst__expandButton:hover:not(:active) {
+    background-size: auto;
+    height: 23px;
+    width: 23px;
+    -webkit-box-shadow: 0 0 0 1px #1890ff!important;
+    box-shadow: 0 0 3px 1px #1890ff!important;
+}
+
+.rst__row{
+    background: #F5F8FE;
+    border: 1px solid #E9ECF6;
+    box-sizing: border-box;
+    height: auto;
+    border-radius: 5px;
+    padding: 5px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 9;
+}
+
+.rst__moveHandle, .rst__loadingHandle {
+    background:#E9ECF6  url('../../../assets/images/icons/handle-burger.svg') no-repeat center;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.rst__rowContents {
+    height: auto;
+    border: none!important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 0!important;
+    border-radius:0;
+    min-width: 150px;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #212121;
+}
+
+
+
+
+
+
+
+
+
